@@ -12,3 +12,12 @@ HTML
 CSS 
 Javascript
 
+# Django:
+
+## SuperUser-->
+
+Username: masao
+password: Shinchan
+email: anjalisinghgsm@gmail.com
+
+
