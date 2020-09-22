@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Aref Ruqaa');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    background-image: url('back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h2, p {
+	font-family: 'Aref Ruqaa';
+	text-align: center;
+	color: #323330;
+	font-size:  50px;
+}
+
+
+p {
+	font-size: 30px;
+}
+
+#output, #container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+
+input {
+    background-color: #eee;
+    border: none;
+    font-family: sans-serif;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-top: 0px;
+    font-family: 'Aref Ruqaa';
+}
