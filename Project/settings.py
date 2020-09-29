@@ -130,7 +130,7 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_POST = 587
 EMAIL_USE_TLS = True
 ############## APUN KA EMAIL AUR PASSWORD ##################
-EMAIL_HOST_USER ="anjalisingh.as2802@gmail.com"
-EMAIL_HOST_PASSWORD = "A.Singh@2001"
+EMAIL_HOST_USER ="your email"
+EMAIL_HOST_PASSWORD = "your password"
 ###########################################################
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
