@@ -1,0 +1,53 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang='en'>
+    <head> 
+        <title> {{title}}</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{% static 'profile.css' %}"/>
+        <  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- message here -->
+        {% if messages %}
+        {% for message in messages %}
+        <script>
+            alert("{{ message }}");
+        </script>
+       
+       {% endfor %}
+       {% endif %}
+
+    </head>
+    <body style="background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(3, 198, 252, 1));"><center>
+      <div id="output"></div>
+      <div  id="mainNavBar">
+        <ul>
+          <li style="padding: 20px"><a href="{% url "cards" %}"><button type="button" class="btn btn-primary btn-lg">Home</button></a></li>
+          {% if user.is_authenticated %}
+          <li style="padding: 20px"><a href="{% url "logout" %}"><span class="glyphicon glyphicon-log-out"><button type="button" class="btn btn-lg"></span> &nbsp; Logout</button></a></li>
+          <div id="container">
+            <input type="text" id="input" value="">
+                  <!-- jquery for enter key press -->      
+      <script src="https://code.jquery.com/jquery-3.0.0.js" integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo=" crossorigin="anonymous"></script>
+    </body>
+    <script src="{% static 'java.js' %}"></script>
+        </div>
+          {% else %}
+          <li style="padding: 20px"><a href="{% url "register" %}"><span class="glyphicon glyphicon-user"></span><button type="button" class="btn btn-primary btn-lg">Sign up</button></a></li>
+          <li style="padding: 20px"><a href="{% url "login" %}"><span class="glyphicon glyphicon-log-in"></span><button type="button" class="btn btn-success btn-lg">Log in</button></a></li>
+          {% endif %}
+        </center>
+          <div class="row">
+            {% block start %}
+            {% if user.is_authenticated %}
+            <center><h1>welcome, here</h1></center>
+            {% endif %}
+            {% endblock %}
+          </div>
+
+
+      
+
+</html>
