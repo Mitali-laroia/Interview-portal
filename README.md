@@ -53,6 +53,31 @@ Ctrl+C to exit from the application
 
 Adding questions for the interview and giving points according using Javascript.
 
+# Folder structure:
+myProject
+- 	mySite
+* 		__pycache__
+* 		__init.py__
+* 		settings.py
+* 		urls.py
+* 		wsgi.py
+- 	myApp
+* 		__pycache__
+* 		migrations
+* 		static
+                * bootstrap
+                * javascript
+                * css
+* 		templates
+                * html
+* 		templatesgetids
+*              Urls.py(u made)
+* 		__init__.py
+* 		admin.py
+* 		apps.py
+* 		models.py
+* 		tests.py
+* 		views.py
 
 ## SuperUser-->
 
