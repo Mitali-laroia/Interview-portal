@@ -7,6 +7,9 @@ Automated Interviewing bot
 ## Work In Progress ##
 
 ### For running the code
+``` 
+cd 'path of the directory in which manage.py is'
+```
 
 ```
 pip install django
