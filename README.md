@@ -6,6 +6,16 @@ Automated Interviewing bot
 
 ## Work In Progress ##
 
+### For running the code
+
+```
+pip install django
+```
+Will the application in localhost
+```
+python manage.py runserver
+```
+Ctrl+C to exit from the application
 
 ## Current Tech Stack Of Project ##
   Front End:
